@@ -54,16 +54,17 @@ app.post("/signup",(req,res)=>{
 
 app.post("/check",async(req,res)=>{
     let {name,age,occupation,username,password}=req.body;
-    try{
-        const userin= await Todo.find({username:username},{password:password});
-        if (userin){
-        console.log("logged in successfully");
-        res.render("todo_page.ejs");
-    } else{
-        res.send("Wrong username or password");
+    try {
+    const user = await Todo.findOne({ username: username, password: password });
+    if (user) {
+      console.log("Logged in successfully");
+      res.render("todo_page.ejs", { user });
+    } else {
+      console.log(" Wrong username or password");
+      res.send("Wrong username or password");
     }
-    } catch(err){
-        console.error("login error",err);
-        res.status(500).send("internal server error");
-    }
+  } catch (err) {
+    console.error("Error checking credentials:", err);
+    res.status(500).send("Internal Server Error");
+  }
 });
