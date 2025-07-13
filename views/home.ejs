@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ToDo Home page</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.27/build/spline-viewer.js"> </script>
+</head>
+<body>
+  <!-- Background 3D viewer -->
+  <div class="background-3d">
+    <spline-viewer url="https://prod.spline.design/OGjMpj7KIAAOXS36/scene.splinecode"></spline-viewer>
+  </div>
+
+  <!-- Foreground content -->
+  <main class="content">
+    <h3>Welcome to ToDo App</h3>
+    <form method="POST" action="/check">
+        <input type="text" placeholder="Enter your Username" class="Login-user" name="username">
+        <br>
+        <input type="password" placeholder="Enter your Password" class="Password" name="password">
+        <br>
+        <button class="log-in-button">Log In</button>
+    </form>
+
+    <form method="GET" action="/signup">
+        <button class="sign-up-link">SignUp </button> 
+    </form>
+
+    <div class="quote-box">
+    <p class="quote1"><i>"A year from now you may wish you had started <br> 
+        <b>Today.</b>" </i>
+        <br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<i>--- &nbsp; <b>Karen Lamb</b></i> </p>
+    <p class="quote2" ><i>Click on the Laptop!!</i></p>
+    <p class="quote3"><i>"" Your <b>productivity partner</b> — in <b>every moment</b> that matters. ""</i></p>
+    </div>
+  </main>
+</body>
+</html>
+

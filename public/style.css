@@ -1,0 +1,97 @@
+body{
+    background-color: #A0A0A0;
+}
+.background-3d {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.background-3d spline-viewer {
+  width: 80vw;
+  height: 100vh;
+  transform: translateX(45vw); 
+}
+
+spline-viewer::part(branding) {
+  display: none !important;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  padding: 2rem;
+  color: black;
+  font-size: 2rem;
+}
+
+.quote1{
+    color:black;
+    position:absolute;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: large;
+    /* font-weight: 300; */
+    width:20rem;
+    right:30rem;
+    top:5rem;
+}
+
+.Login-user{
+    border: 2.5px solid black;
+    border-radius: 25px;
+    background-color: rgb(218, 234, 246);
+    color: black;
+    /* width: 10rem; */
+    height:1.5rem;
+    transform: scale(1.2);
+    bottom:0.5rem;
+}
+.Password{
+    border: 2.5px solid black;
+    border-radius: 25px;
+    background-color: rgb(218, 234, 246);
+    color: black;
+    height:1.5rem;
+    transform: scale(1.2);
+    bottom:0.5rem;
+}
+.sign-up-link{
+    color:black;
+    font-size: medium;
+    top:23rem;
+    right: 50rem;
+
+}
+.log-in-button{
+    color: black;
+    background-color:rgb(218, 234, 246);
+    border-radius: 25px;
+    transform: scale(1.2);
+}
+.profile{
+    position: absolute;
+    right:70rem;
+    top:25rem;
+}
+.quote2{
+    color:black;
+    position:absolute;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: medium;
+    width:20rem;
+    right:10rem;
+    top:30rem;
+}
+.quote3{
+    color:black;
+    position:absolute;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: medium;
+    width:20rem;
+    right:26rem;
+    top:35rem;
+}

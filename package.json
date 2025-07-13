@@ -1,0 +1,27 @@
+{
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "method-override": "^3.0.0",
+    "mongoose": "^8.16.3",
+    "node": "^24.4.0",
+    "nodemon": "^3.1.10"
+  },
+  "name": "todoapp",
+  "version": "1.0.0",
+  "description": "To Do app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aminroopkhs/ToDo-Website.git"
+  },
+  "author": "Poornima KHS",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aminroopkhs/ToDo-Website/issues"
+  },
+  "homepage": "https://github.com/Aminroopkhs/ToDo-Website#readme"
+}
