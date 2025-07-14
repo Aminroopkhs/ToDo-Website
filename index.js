@@ -36,10 +36,11 @@ app.get("/signup",(req,res)=>{
 });
 
 app.post("/signup",(req,res)=>{
-    let {name,age,occupation,username,password}=req.body;
+    let {name,age,email,day,week,month,occupation,username,password}=req.body;
     let new_todo= new Todo ({
         name:name,
         age:age,
+        email:email,
         occupation:occupation,
         username:username,
         password:password
@@ -53,12 +54,13 @@ app.post("/signup",(req,res)=>{
 });
 
 app.post("/check",async(req,res)=>{
-    let {name,age,occupation,username,password}=req.body;
+    let {name,age,email,day,week,month,occupation,username,password}=req.body;
     try {
     const user = await Todo.findOne({ username: username, password: password });
     if (user) {
       console.log("Logged in successfully");
-      res.render("todo_page.ejs", { user });
+    res.redirect(`/:${user._id}/todolist`);
+    console.log(`${user._id}`);
     } else {
       console.log(" Wrong username or password");
       res.send("Wrong username or password");
@@ -68,3 +70,14 @@ app.post("/check",async(req,res)=>{
     res.status(500).send("Internal Server Error");
   }
 });
+
+app.get("/:id/todolist",async(req,res)=>{
+    let {id}=req.params;
+    id=id.replace(':','');
+    let user_info= await Todo.findOne({_id:id});
+    res.render("todo_page.ejs",{user_info});
+});
+
+app.post("/:id/todolist",(req,res)=>{
+
+})

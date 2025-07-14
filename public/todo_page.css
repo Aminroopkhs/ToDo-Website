@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-image: url('/image4.jpg'); 
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+}
+.sidebar{
+    position: relative;
+    background-color:  #EFEEEA;
+    height:45.2rem;
+    width: 20rem;
+    border: 2.5px solid black;
+}
+.user {
+  position: absolute;
+  top: 1rem;
+  left: 7rem;
+  width:auto;
+  height:2rem;
+  transform: scale(2);
+}
+.email{
+    position: absolute;
+  top: 3rem;
+  left: 3.5rem;
+  width:auto;
+  height:2rem;
+  transform: scale(1.4);
+}
+.user:hover, .email:hover{
+    color:#053B50;
+}
+.heading1{
+  position: absolute;    
+  top: 1rem;             
+  left: 50%;             
+  transform: translateX(-50%); 
+  text-align: center;
+}
+nav{
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    gap:1.5rem;
+    top:7rem;
+}
+nav button{
+    position: inherit;
+    left:1rem;
+    width:15.3rem;
+    height:2.5rem;
+    background-color: inherit;
+    border: none;
+    font-weight: 700;
+    transform: scale(1.5);
+}
+nav button:hover{
+    background-color: #B3C8CF;
+}
+.btn-div{
+  border: 2px transparent #053B50;
+  border-radius: 25px;
+  position: absolute;
+  top:40rem;
+  left:24%;
+  width:70rem;
+  height:3rem;
+}
+.plus-button{
+    position: absolute;
+    border: 2px solid #053B50;
+    border-radius: 25px;
+    height:3rem;
+    width:15rem;
+    right:0%;
+}
+.input-task{
+  position: absolute;
+  border: 2px solid #053B50;
+    border-radius: 25px;
+    height:2.8rem;
+    width:40rem;
+    left:-0.1%;
+}

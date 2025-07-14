@@ -4,9 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Todo Lists</title>
+    <link rel="stylesheet" href="/todo_page.css">
+    <script src="https://kit.fontawesome.com/fc129de15d.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <h1>Here's your list!!! </h1>
-    <button class="Plus button">Add New task</button>
+    <div class="background"></div>
+    <div class="sidebar">
+        <nav>
+            <button><i class="fa-regular fa-sun"></i> Day</button>
+            <button><i class="fa-regular fa-star"></i> Planned</button>
+            <button><i class="fa-solid fa-forward-fast"></i> Important</button>
+            <button><i class="fa-solid fa-recycle"></i> Tasks </button> 
+        </nav>
+    </div>
+    <h1 class="heading1">Here's your list!!! </h1>
+    <div class="btn-div">
+    <input class="input-task" type="text" name="day" placeholder="     &#129534; Pay Electricity Bill">
+    <button class="plus-button"><i class="fa-solid fa-plus"></i> &nbsp;  &nbsp; Add New task</button> </div>
+    <p class="user"><i class="fa-solid fa-user"></i>  <%=user_info.name%> </p>
+        <br> <p class="email"><i class="fa-regular fa-envelope"></i> <%=user_info.email%>
+    </p>
 </body>
 </html>
