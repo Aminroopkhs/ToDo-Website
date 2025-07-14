@@ -4,25 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SignUp page</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
+    <div class="background-signup"></div>
+    <div class="blur"></div>
+    <div class="details-signup"><i>Fill the following details to signup!</i></div>
+    <div class="header-signup"><h2>Welcome to the Website, Please sign up to continue!</h2></div>
+    <div class="profile-signup">
     <form method="POST" action="/signup">
-        <div class="Profile">
-            <input type="text" placeholder="Enter your name" class="name" name="name">
+        <!-- <label id="name"> Name</label> -->
+            <input type="text" id="name" placeholder="Enter your name" class="name-signup" name="name">
             <br> <br>
-            <input type="number" placeholder="Enter your age" class="age" name="age">
+            <input type="number" placeholder="Enter your age" class="age-signup" name="age">
             <br> <br>
-            <input type="text" placeholder="Enter your email id" class="email" name="email">
+            <input type="text" placeholder="Enter your email id" class="email-signup" name="email">
             <br> <br>
-            <input type="text" placeholder="Enter your occupation" class="occupation" name="occupation">
+            <input type="text" placeholder="Enter your occupation" class="occupation-signup" name="occupation">
             <br> <br>
-            <input type="text" placeholder="Enter your Username" class="Login-user" name="username">
+            <input type="text" placeholder="Enter your Username" class="Login-user-signup" name="username">
             <br> <br>
-            <input type="password" placeholder="Enter your Password" class="Password" name="password">
+            <input type="password" placeholder="Enter your Password" class="Password-signup" name="password">
             <br> <br>
-                <button class="Submit-button">Submit</button>
-        </div>
+                <button class="Submit-button-signup">Submit</button>
     </form>
+    </div>
+    <div class="content1-signup">
+        <h2>Why use This ToDo Website?</h2>
+        <p>Because your time matters. 🕒</p>
+        <p>TaskMinder is your personal productivity partner — helping you break down big goals into small, <br> trackable tasks.<br>
+            Stay consistent, stay focused.</p>
+        <p><em>"A year from now, you may wish you had started today."</em></p>
+        <h2>Your Future Self is Waiting...</h2>
+        <p>Imagine waking up with clarity, completing your day with confidence, and watching your progress build over time.</p>
+        <p>This is not just another to-do app. It’s your commitment companion. 
+            <br> Let’s build something meaningful — one task at a time.</p>
+        <p><em>#BuildMomentum #StayOnTrack</em></p>
+    </div>
 </body>
 </html>
